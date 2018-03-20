@@ -1,0 +1,17 @@
+def sum_of_cubes(a,b)
+  array = (a..b).to_a
+  sum = 0
+  for x in array
+    sum += x*x*x
+  end
+  puts ("sum of cubes is: " + sum.to_s)
+end
+def find_frequency(word, sentence)
+  downcase_sentence = sentence.downcase
+  downcase_word = word.downcase
+  sentence_in_array = downcase_sentence.split()
+  puts(sentence_in_array.count(downcase_word))
+end
+
+sum_of_cubes(1,3)
+find_frequency("The","Ruby is The best language in the World")
